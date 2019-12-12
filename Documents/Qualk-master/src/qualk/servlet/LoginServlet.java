@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 import qualk.beans.*;
 import qualk.utils.*;
 
-@WebServlet(urlPatterns = {"/login"})
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -28,7 +28,8 @@ public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// Forward to /WEB-INF/views/loginView.jsp
 		// User cannot access directly into JSP pages placed in /WEB-INF/
-		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/jobfinder/login.html");
+		RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/jobfinder/login.jsp");
+		System.out.println(dispatcher.toString());
 		dispatcher.forward(req, resp);
 	}
 	
@@ -62,6 +63,7 @@ public class LoginServlet extends HttpServlet {
 		}
 		// If error, forward to login page
 		if (hasError) {
+			System.out.println("LOGINED FAIL");
 			user = new User();
 			user.setUserName(username);
 			user.setPassword(password);
@@ -71,12 +73,14 @@ public class LoginServlet extends HttpServlet {
 			req.setAttribute("user", user);
 			
 			// Forward to login page
-			RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/WEB-INF/jobfinder/login.html");
+			RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/jobfinder/login.jsp");
+		
 			dispatcher.forward(req, resp);
 			
 		// If no error, store user information in session
 		// And redirect to UserInfo Page
 		} else {
+			System.out.println("LOGINED SUCCESSFULLY");
 			HttpSession session = req.getSession();
 			MyUtils.storeUserInfo(session, user);
 			

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,15 +20,13 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="css/loginStyle.css">
     
   </head>
   <body>
@@ -41,6 +41,7 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
+    
     
     <div class="site-navbar-wrap js-site-navbar bg-white">
       
@@ -87,47 +88,148 @@
         </div>
       </div>
     </div>
-
+  
     <div style="height: 113px;"></div>
 
+    <div class="unit-5 overlay" style="background-image: url('images/hero_1.jpg');">
+      <div class="container text-center">
+        <h2 class="mb-0">Blog</h2>
+        <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>Blog</span></p>
+      </div>
+    </div>
+
     
-    <section class='login-form-section'> 
-      <div class="container login-form-container"> 
-        <div class="row login-form-row">
-          <h2 class='login-title'>Login to <a href='#'>QUALK</a></h2>
-          
-          <form action='#' method='POST'>
-              <!-- <div class='input-form' id='user-first'>
-                  <input class='input'  type='text' placeholder='UserID' name='username'>
-                  <button type='submit' id='firstSubmit' class='submit-btn'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
-                  
-                </div> -->
-            <div class='input-form' id='user' >
-              <input class='input'  type='text' placeholder='UserID' name='username'>
-              <!-- <button type='submit' class='submit-btn'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></input>
-               -->
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_1.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
             </div>
-            <div class='input-form' id='pass' >
-              <input class='input' type='password' placeholder='Password' name='password'>
-              <button type='submit' class='submit-btn' value='Login' ><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></input>
+            
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
             </div>
-            <div class='remember-btn'>
-              <input id='remember-checkbox' type='checkbox' value='remenberMe'><span id='remember-me'>Remember-me</span>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_3.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
             </div>
-          </form>
-          <div id='separator'></div>
-          <div class='not-sign-in'>
-              <a href='#' class='option'>Forgot UserID or Password</a>
-              <div class='option'>Don't have a UserID?<span><a href='#' class='option'> Create your now</a></span>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_4.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
           </div>
 
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_1.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+            
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_3.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_4.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_1.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+            
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_2.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_3.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 mb-lg-4 col-lg-3" data-aos="fade">
+            <div class="position-relative unit-8">
+            <a href="#" class="mb-3 d-block img-a"><img src="images/img_4.jpg" alt="Image" class="img-fluid rounded"></a>
+            <span class="d-block text-gray-500 text-normal small mb-3">By <a href="#">Colorlib</a> <span class="mx-2">&bullet;</span> Jan 20th, 2019</span>
+            <h2 class="h5 font-weihgt-normal line-height-sm mb-3"><a href="#" class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur nostrum asperiores corrupti delectus.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mt-5">
+          <div class="col-md-12 text-center">
+            <div class="site-block-27">
+              <ul>
+                <li><a href="#"><i class="icon-keyboard_arrow_left h5"></i></a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><i class="icon-keyboard_arrow_right h5"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
 
       </div>
+    </div>   
 
-    </section>
+    
 
+
+    
     <footer class="site-footer">
       <div class="container">
         
@@ -189,10 +291,8 @@
         </div>
       </div>
     </footer>
+  </div>
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -210,44 +310,7 @@
 
   <script src="js/main.js"></script>
     
-<script>
-    // Use when user enter userID
-    function loginForm(){
-        var firstInputForm = $('#user-first');
-        var user = $('#user');
-        var pass = $('#pass');
-        var firstSubmit = $('button#firstSubmit');
-        var clicked = false;
 
-        // while (!clicked){
-        //     firstInputForm.show();
-        //     user.hide();
-        //     pass.hide();
-        //     if ($('#firstSubmit').click()){
-        //       clicked = true; 
-        //       firstInputForm.hide();
-        //       user.show();
-        //       pass.slideDown(3000);
-        //     }
-        // }
-        $(function(){
-            firstSubmit.click(function(){
-                firstInputForm.hide(); 
-                user.show();
-                pass.slideDown(3000);
-            });
-        });
-        console.log('SUCCESS');
-
-
-    }
-       
-       
-
-
-
-  
-</script>
   <script>
       document.addEventListener('DOMContentLoaded', function() {
                 var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
@@ -335,9 +398,6 @@
           });
         }
       }
-
-
-     
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"

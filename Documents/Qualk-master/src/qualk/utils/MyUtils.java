@@ -31,6 +31,7 @@ public class MyUtils {
 		
 		// on jsp access via ${user}
 		session.setAttribute("loginedUser", user);
+		
 	}
 	
 	// get user information in session

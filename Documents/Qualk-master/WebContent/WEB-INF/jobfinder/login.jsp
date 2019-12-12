@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,6 +31,53 @@
     <link rel="stylesheet" href="css/loginStyle.css">
     
   </head>
+  <%-- <style>
+  	<%@ include file = "fonts/icomoon/style.css" %>
+  	<%@ include file = "css/bootstrap.min.css" %>
+  	<%@ include file = "css/magnific-popup.css" %>
+  	<%@ include file = "css/jquery-ui.css" %>
+  	<%@ include file = "css/owl.carousel.min.css" %>
+  	<%@ include file = "css/owl.theme.default.min.css" %>
+  	<%@ include file = "css/bootstrap-datepicker.css" %>
+  	<%@ include file = "css/animate.css" %>
+  	<%@ include file = "fonts/flaticon/font/flaticon.css" %>
+  	<%@ include file = "css/aos.css" %>
+  	<%@ include file = "css/style.css" %>
+  	<%@ include file = "css/loginStyle.css" %>
+  	
+  	
+  </style>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  
+  <script src="js/mediaelement-and-player.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+  <%@ include file = "js/jquery-3.3.1.min.js" %>
+  <%@ include file = "js/jquery-migrate-3.0.1.min.js" %>
+  <%@ include file = "js/jquery-ui.js" %>
+  <%@ include file = "js/popper.min.js" %>
+  <%@ include file = "js/bootstrap.min.js" %>
+  <%@ include file = "js/owl.carousel.min.js" %>
+  <%@ include file = "js/jquery.stellar.min.js" %>
+  <%@ include file = "js/jquery.countdown.min.js" %>
+  <%@ include file = "js/jquery.magnific-popup.min.js" %>
+  <%@ include file = "js/bootstrap-datepicker.min.js" %>
+  <%@ include file = "js/aos.js" %>
+  <%@ include file = "js/mediaelement-and-player.min.js" %>
+  <%@ include file = "js/main.js" %>
+  </script> --%>
   <body>
   
   <div class="site-wrap">
@@ -96,7 +145,7 @@
         <div class="row login-form-row">
           <h2 class='login-title'>Login to <a href='#'>QUALK</a></h2>
           
-          <form action='#' method='POST'>
+          <form action='${pageContent.request.contentPath}/login' method='POST'>
               <!-- <div class='input-form' id='user-first'>
                   <input class='input'  type='text' placeholder='UserID' name='username'>
                   <button type='submit' id='firstSubmit' class='submit-btn'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
@@ -109,10 +158,10 @@
             </div>
             <div class='input-form' id='pass' >
               <input class='input' type='password' placeholder='Password' name='password'>
-              <button type='submit' class='submit-btn' value='Login' ><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></input>
+              <button type='submit' class='submit-btn' value='Submit' ><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
             </div>
             <div class='remember-btn'>
-              <input id='remember-checkbox' type='checkbox' value='remenberMe'><span id='remember-me'>Remember-me</span>
+              <input id='remember-checkbox' type='checkbox' name='rememberMe' value='Y'><span id='remember-me'>Remember-me</span>
             </div>
           </form>
           <div id='separator'></div>
@@ -123,7 +172,7 @@
 
         </div>
 
-
+	</div>
       </div>
 
     </section>
@@ -189,26 +238,11 @@
         </div>
       </div>
     </footer>
-
+</div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/aos.js"></script>
-
   
-  <script src="js/mediaelement-and-player.min.js"></script>
-
-  <script src="js/main.js"></script>
     
 <script>
     // Use when user enter userID

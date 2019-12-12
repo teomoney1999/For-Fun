@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+   pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,15 +20,13 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="css/loginStyle.css">
     
   </head>
   <body>
@@ -41,6 +41,7 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
+    
     
     <div class="site-navbar-wrap js-site-navbar bg-white">
       
@@ -87,47 +88,205 @@
         </div>
       </div>
     </div>
-
+  
     <div style="height: 113px;"></div>
 
+    <div class="unit-5 overlay" style="background-image: url('images/hero_1.jpg');">
+      <div class="container text-center">
+        <h2 class="mb-0">Post a Job</h2>
+        <p class="mb-0 unit-6"><a href="index.html">Home</a> <span class="sep">></span> <span>Post a Job</span></p>
+      </div>
+    </div>
+
     
-    <section class='login-form-section'> 
-      <div class="container login-form-container"> 
-        <div class="row login-form-row">
-          <h2 class='login-title'>Login to <a href='#'>QUALK</a></h2>
+    
+
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+       
+          <div class="col-md-12 col-lg-8 mb-5">
           
-          <form action='#' method='POST'>
-              <!-- <div class='input-form' id='user-first'>
-                  <input class='input'  type='text' placeholder='UserID' name='username'>
-                  <button type='submit' id='firstSubmit' class='submit-btn'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
-                  
-                </div> -->
-            <div class='input-form' id='user' >
-              <input class='input'  type='text' placeholder='UserID' name='username'>
-              <!-- <button type='submit' class='submit-btn'><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></input>
-               -->
-            </div>
-            <div class='input-form' id='pass' >
-              <input class='input' type='password' placeholder='Password' name='password'>
-              <button type='submit' class='submit-btn' value='Login' ><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></input>
-            </div>
-            <div class='remember-btn'>
-              <input id='remember-checkbox' type='checkbox' value='remenberMe'><span id='remember-me'>Remember-me</span>
-            </div>
-          </form>
-          <div id='separator'></div>
-          <div class='not-sign-in'>
-              <a href='#' class='option'>Forgot UserID or Password</a>
-              <div class='option'>Don't have a UserID?<span><a href='#' class='option'> Create your now</a></span>
+            
+          
+            <form action="#" class="p-5 bg-white">
+              
+              <div class="row form-group">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-price-1">
+                    <input type="checkbox" id="option-price-1"> <span class="text-success">$300</span> For 30 days
+                  </label>
+                </div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-price-2">
+                    <input type="checkbox" id="option-price-2"> <span class="text-success">$200</span> / Monthly Recurring
+                  </label>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="fullname">Job Title</label>
+                  <input type="text" id="fullname" class="form-control" placeholder="eg. Full Stack Frontend">
+                </div>
+              </div>
+
+              <div class="row form-group mb-5">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="fullname">Company</label>
+                  <input type="text" id="fullname" class="form-control" placeholder="eg. Facebook, Inc.">
+                </div>
+              </div>
+
+
+              <div class="row form-group">
+                <div class="col-md-12"><h3>Job Type</h3></div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-job-type-1">
+                    <input type="radio" id="option-job-type-1" name="job-type"> Full Time
+                  </label>
+                </div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-job-type-2">
+                    <input type="radio" id="option-job-type-2" name="job-type"> Part Time
+                  </label>
+                </div>
+
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-job-type-3">
+                    <input type="radio" id="option-job-type-3" name="job-type"> Freelance
+                </div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-job-type-4">
+                    <input type="radio" id="option-job-type-4" name="job-type"> Internship
+                  </label>
+                </div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label for="option-job-type-4">
+                    <input type="radio" id="option-job-type-4" name="job-type"> Termporary
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="row form-group mb-4">
+                <div class="col-md-12"><h3>Location</h3></div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <input type="text" class="form-control" placeholder="New York City">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12"><h3>Job Description</h3></div>
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <textarea name="" class="form-control" id="" cols="30" rows="5"></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Post a Job" class="btn btn-primary  py-2 px-5">
+                </div>
+              </div>
+
+  
+            </form>
           </div>
 
+          <div class="col-lg-4">
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">Contact Info</h3>
+              <p class="mb-0 font-weight-bold">Address</p>
+              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+
+              <p class="mb-0 font-weight-bold">Phone</p>
+              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+
+              <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+
+            </div>
+            
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">More Info</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ad iure porro mollitia architecto hic consequuntur. Distinctio nisi perferendis dolore, ipsa consectetur</p>
+              <p><a href="#" class="btn btn-primary  py-2 px-4">Learn More</a></p>
+            </div>
+          </div>
         </div>
-
-
       </div>
+    </div>
 
-    </section>
+   
 
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-6" data-aos="fade" >
+            <h2>Frequently Ask Questions</h2>
+          </div>
+        </div>
+        
+
+        <div class="row justify-content-center" data-aos="fade" data-aos-delay="100">
+          <div class="col-md-8">
+            <div class="accordion unit-8" id="accordion">
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">What is the name of your company<span class="icon"></span></a>
+              </h3>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate.</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+            
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">How much pay for 3  months?<span class="icon"></span></a>
+              </h3>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Do I need to register?  <span class="icon"></span></a>
+              </h3>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">Who should I contact in case of support.<span class="icon"></span></a>
+              </h3>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+          </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    
+
+
+    
     <footer class="site-footer">
       <div class="container">
         
@@ -189,10 +348,8 @@
         </div>
       </div>
     </footer>
+  </div>
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -210,44 +367,7 @@
 
   <script src="js/main.js"></script>
     
-<script>
-    // Use when user enter userID
-    function loginForm(){
-        var firstInputForm = $('#user-first');
-        var user = $('#user');
-        var pass = $('#pass');
-        var firstSubmit = $('button#firstSubmit');
-        var clicked = false;
 
-        // while (!clicked){
-        //     firstInputForm.show();
-        //     user.hide();
-        //     pass.hide();
-        //     if ($('#firstSubmit').click()){
-        //       clicked = true; 
-        //       firstInputForm.hide();
-        //       user.show();
-        //       pass.slideDown(3000);
-        //     }
-        // }
-        $(function(){
-            firstSubmit.click(function(){
-                firstInputForm.hide(); 
-                user.show();
-                pass.slideDown(3000);
-            });
-        });
-        console.log('SUCCESS');
-
-
-    }
-       
-       
-
-
-
-  
-</script>
   <script>
       document.addEventListener('DOMContentLoaded', function() {
                 var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
@@ -335,9 +455,6 @@
           });
         }
       }
-
-
-     
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"

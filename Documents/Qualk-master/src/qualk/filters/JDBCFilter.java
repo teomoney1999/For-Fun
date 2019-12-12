@@ -36,6 +36,7 @@ public class JDBCFilter implements Filter {
  
     private boolean needJDBC(HttpServletRequest request) {
         System.out.println("JDBC Filter");
+//        String contextPath = request.getContextPath();
         // 
         // Servlet Url-pattern: /spath/*
         // 
@@ -96,6 +97,7 @@ public class JDBCFilter implements Filter {
             }
         }
         else {
+
             chain.doFilter(request, response);
         }
  
